@@ -1,0 +1,34 @@
+{
+  "name": "reactminichallenge",
+  "version": "1.0.0",
+  "description": "React mini challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "vitest",
+    "format": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlblom/ReactMiniChallenge.git"
+  },
+  "author": "Danielle Blom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlblom/ReactMiniChallenge/issues"
+  },
+  "homepage": "https://github.com/dlblom/ReactMiniChallenge#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.6"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "jsdom": "^25.0.0",
+    "vitest": "^2.1.1"
+  }
+}
