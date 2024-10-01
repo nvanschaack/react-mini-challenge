@@ -1,5 +1,6 @@
 // TO DO: The fact component should render an animal fact from data.js
-export function Fact({factCard}) {
+// destructuring props.factCard to just factCard
+export function Fact({factCard, favoriteAnimal}) {
   //factCard is an object that represents each individual index in the facts array (from FactsList)
 // console.log(factCard);
 const {animal, image, altText, fact} = factCard;
@@ -8,7 +9,7 @@ const {animal, image, altText, fact} = factCard;
     <div className='factCard' data-testid='factCard'>
       <h1>{animal}</h1>
       {/* TODO: Clicking the favorite button should update the App state with the favorited animal name */}
-      <button value={animal} name='faveBtn'>
+      <button value={animal} name='faveBtn' onClick={favoriteAnimal}>
         Click to favorite
       </button>
       <img src={image} width='600' height='400' alt={altText} />
