@@ -8,15 +8,12 @@ export default function App() {
   // const [data, setData] = useState(animalFacts);
   const [favorite, setFavorite] = useState('');
 
+  //TWO DIFFERENT KINDS OF USEEFFECTS BEING USED:
   useEffect(()=>{
-    console.log('my component loaded!');
+    console.log('app.jsx mounted. This only happens once when app is first loaded');
   }, [])
 
-  // useEffect(()=>{
-  //   if (favorite === "Elephant") {
-  //     console.log('favorite animal has been updated', favorite);
-  //   }
-  // }, [favorite])
+  useEffect(()=>console.log('app.jsx is rendered'))
 
   function handleFavoriteClick(event) {
     // console.log(event.target.value);
